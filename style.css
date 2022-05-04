@@ -14,10 +14,14 @@
 .navbar{
     position: fixed;
     width: 100%;
-    z-index: 999;
     padding: 30px 0;
-    background: crimson;
     font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background: crimson ;
 }
 .navbar .max-width{
     display: flex;
@@ -33,6 +37,13 @@
 
 
 }
+.navbar .logo a span{
+    color: rgb(4, 105, 236);
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+    color: #fff;
+}
 .navbar .menu li{
     list-style: none;
     display: inline-block;
@@ -45,7 +56,14 @@
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
+    transition: color 0.3s ease;
 
+
+}
+
+
+.navbar .menu li a:hover{
+    color: crimson;
 
 }
 
